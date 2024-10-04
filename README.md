@@ -68,7 +68,7 @@ The Customer Management System is a comprehensive web application designed to ef
   "state": "Maharashtra"
 }
 ```
-![Registration](/SunbaseCustomerManagementSystem/src/main/resources/static/images/Registration.png)
+![img](https://github.com/Kajol1106/Sunbase-Pvt.-Ltd.-Assignment/blob/main/SunbaseCustomerManagementSystem/src/main/resources/static/images/Registration%201.png)
 
 ### Login
 **POST** `http://localhost:8080/api/auth/loginCustomer`
@@ -84,7 +84,7 @@ The Customer Management System is a comprehensive web application designed to ef
   "password": "Test@123"
 }
 ```
-![Login](/SunbaseCustomerManagementSystem/src/main/resources/static/images/Login.png)
+![img](https://github.com/Kajol1106/Sunbase-Pvt.-Ltd.-Assignment/blob/main/SunbaseCustomerManagementSystem/src/main/resources/static/images/Login%201.png)
 
 ### Add New Customer
 
@@ -109,7 +109,7 @@ The Customer Management System is a comprehensive web application designed to ef
   "state": "Maharashtra"
 }
 ```
-![Save new Customer](SunbaseCustomerManagementSystem/src/main/resources/static/images/add%20customer.png)
+![img](https://github.com/Kajol1106/Sunbase-Pvt.-Ltd.-Assignment/blob/main/SunbaseCustomerManagementSystem/src/main/resources/static/images/add%20customer.png)
 
 ### Edit a Customer
 
@@ -147,13 +147,13 @@ The Customer Management System is a comprehensive web application designed to ef
 ### Search
 - Use the search functionality to filter customers based on criteria like first name, city, email, and phone. Designed in front-end
 
-![Search](SunbaseCustomerManagementSystem/src/main/resources/static/images/Search.png)
+![img](https://github.com/Kajol1106/Sunbase-Pvt.-Ltd.-Assignment/blob/main/SunbaseCustomerManagementSystem/src/main/resources/static/images/Search.png)
 
 ### Sync Button And Pagination
 - Located on the customer list screen, this button fetches customer data from a remote API and updates your database. If a customer already exists, their details are updated rather than creating a duplicate entry.
 - Pagination functionality add
 
-![Sync & Pagination](SunbaseCustomerManagementSystem/src/main/resources/static/images/after%20sync.png)
+![img](https://github.com/Kajol1106/Sunbase-Pvt.-Ltd.-Assignment/blob/main/SunbaseCustomerManagementSystem/src/main/resources/static/images/after%20sync.png)
 
 ## Contact
 For further suggestions, enquiries, or issues, please contact `kajolkolagir@gmail.com`
