@@ -25,33 +25,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 		this.jwtUtil = jwtUtil;
 	}
 
-    /*
-	@Override
-	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
-			throws ServletException, IOException {
-		final String authorizationHeader = request.getHeader("Authorization");
-
-        log.info("Check if the Authorization header is present and starts with Bearer");
-        if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
-            String jwtToken = authorizationHeader.substring(7);
-            String email = jwtUtil.extractUsername(jwtToken);
-
-            log.info("Validate the extracted email and ensure no existing authentication in the SecurityContext");
-            if (email != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-                UserDetails userDetails = userDetailsService.loadUserByUsername(email);
-
-                log.info("Validate the JWT token and set the authentication in the SecurityContext if valid");
-                if (jwtUtil.validateToken(jwtToken, userDetails)) {
-                    Authentication authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
-                    SecurityContextHolder.getContext().setAuthentication(authentication);
-                }
-            }
-        }
-
-        log.info("Continue with the next filter in the chain");
-        filterChain.doFilter(request, response);
-    } */
-
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
@@ -84,6 +57,5 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         log.info("Continue with the next filter in the chain");
         filterChain.doFilter(request, response);
     }
-
 
 }
